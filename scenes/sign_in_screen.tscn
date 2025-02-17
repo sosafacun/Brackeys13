@@ -1,0 +1,202 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqtxl3knltyto"]
+
+[ext_resource type="Script" path="res://scripts/sign_in_screen.gd" id="1_aiap3"]
+
+[node name="SignInScreen" type="VBoxContainer"]
+anchors_preset = -1
+anchor_right = 0.2
+anchor_bottom = 0.844
+offset_bottom = 0.47998
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_aiap3")
+
+[node name="NameInput" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+metadata/_edit_lock_ = true
+
+[node name="NameLabel" type="Label" parent="NameInput"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "What's your name?"
+horizontal_alignment = 1
+
+[node name="PlayerNameInput" type="LineEdit" parent="NameInput"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Enter your name here."
+alignment = 1
+max_length = 25
+
+[node name="Continue" type="Button" parent="NameInput"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "Continue"
+
+[node name="Spacer" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+metadata/_edit_lock_ = true
+
+[node name="DogOrCat" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
+
+[node name="DogOrCatLabel" type="Label" parent="DogOrCat"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+text = "Are you a dog person or a cat person?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DogOrCat"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacer" type="Control" parent="DogOrCat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="DogButton" type="Button" parent="DogOrCat/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Woof"
+
+[node name="Spacer2" type="Control" parent="DogOrCat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.22
+
+[node name="CatButton" type="Button" parent="DogOrCat/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Meow"
+
+[node name="Spacer3" type="Control" parent="DogOrCat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="Spacer2" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+metadata/_edit_lock_ = true
+
+[node name="StayOrGo" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="StayOrGo"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+text = "Do you prefer to stay in or to go out?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="StayOrGo"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StayOrGo"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="StayOrGo/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="StayInButton" type="Button" parent="StayOrGo/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Stay In"
+
+[node name="Spacer2" type="Control" parent="StayOrGo/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoOutButton" type="Button" parent="StayOrGo/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Go out"
+
+[node name="Spacer3" type="Control" parent="StayOrGo/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="Spacer3" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+metadata/_edit_lock_ = true
+
+[node name="BigOrSmallCompany" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="BigOrSmallCompany"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Do work in a big or a small company?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BigOrSmallCompany"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacer" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BigCompanyButton" type="Button" parent="BigOrSmallCompany/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Big Company"
+
+[node name="Spacer2" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SmallCompanyButton" type="Button" parent="BigOrSmallCompany/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Small Company
+"
+
+[node name="Spacer3" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="NameInput/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="DogOrCat/HBoxContainer/DogButton" to="." method="_on_dog_button_pressed"]
+[connection signal="pressed" from="DogOrCat/HBoxContainer/CatButton" to="." method="_on_cat_button_pressed"]
+[connection signal="pressed" from="StayOrGo/HBoxContainer/StayInButton" to="." method="_on_stay_in_button_pressed"]
+[connection signal="pressed" from="StayOrGo/HBoxContainer/GoOutButton" to="." method="_on_go_out_button_pressed"]

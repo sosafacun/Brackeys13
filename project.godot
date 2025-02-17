@@ -27,11 +27,20 @@ gdscript/warnings/inferred_declaration=2
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"player": "res://timelines/player.dch"
+}
 directories/dtl_directory={
 "start_of_game_cutscene": "res://timelines/start_of_game_cutscene.dtl"
 }
-variables={}
+variables={
+"player": {
+"big_small_company": false,
+"name": "",
+"pet": false,
+"stay_or_go": false
+}
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
