@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://b1dprnfblvwkn"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_ahxb0"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_o0tvd"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_x3c6u"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_yjcxy"]
+[ext_resource type="PackedScene" uid="uid://bqvmmdcjm5x3q" path="res://styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="5_35pec"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="6_q5nfc"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="7_54efs"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="8_u5um1"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="9_ccj3c"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_oa4p4"]
+
+[sub_resource type="Resource" id="Resource_mw6r3"]
+script = ExtResource("1_ahxb0")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_iqtl5"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("2_o0tvd")
+overrides = {
+"disabled": "true"
+}
+
+[sub_resource type="Resource" id="Resource_whk64"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("3_x3c6u")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_beml3"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("4_yjcxy")
+overrides = {
+"disabled": "true"
+}
+
+[sub_resource type="Resource" id="Resource_3kclm"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("5_35pec")
+overrides = {
+"autoadvance_progressbar": "false",
+"bold_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans Bold.ttf\"",
+"bold_italics_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans Bold Italic.ttf\"",
+"box_animation_in": "0",
+"box_animation_out": "0",
+"box_color_custom": "Color(1, 1, 1, 0)",
+"box_color_use_global": "false",
+"box_size": "Vector2(1050, 130)",
+"italics_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans Italic.ttf\"",
+"name_label_custom_color": "Color(0.107117, 0.457031, 0.407825, 1)",
+"name_label_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans.ttf\"",
+"name_label_use_global_color": "false",
+"name_label_use_global_font": "false",
+"next_indicator_enabled": "false",
+"next_indicator_show_on_questions": "false",
+"normal_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans.ttf\"",
+"text_custom_color": "Color(0, 0.742188, 0.0115967, 1)",
+"text_use_global_color": "false"
+}
+
+[sub_resource type="Resource" id="Resource_rd2wm"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("6_q5nfc")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_gqjx0"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("7_54efs")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_1ffbx"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("8_u5um1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_68kis"]
+script = ExtResource("1_ahxb0")
+scene = ExtResource("9_ccj3c")
+overrides = {}
+
+[resource]
+script = ExtResource("10_oa4p4")
+name = "FEMALE_spy_on"
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_mw6r3"),
+"10": SubResource("Resource_iqtl5"),
+"11": SubResource("Resource_whk64"),
+"12": SubResource("Resource_beml3"),
+"13": SubResource("Resource_3kclm"),
+"14": SubResource("Resource_rd2wm"),
+"15": SubResource("Resource_gqjx0"),
+"16": SubResource("Resource_1ffbx"),
+"17": SubResource("Resource_68kis")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_ahxb0")]([])
+metadata/_latest_layer = "13"

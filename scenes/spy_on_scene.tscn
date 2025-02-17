@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://c06n6ca84kyfc"]
+
+[ext_resource type="Script" path="res://scripts/spy_on_scene.gd" id="1_b7scp"]
+[ext_resource type="Texture2D" uid="uid://gnospkvy34kw" path="res://assets/PLACEHOLDER - DELETE/spy-bg-day.png" id="2_aacue"]
+[ext_resource type="Theme" uid="uid://ct4daao2ntnt8" path="res://styles/spy_on_scene.tres" id="2_inpwf"]
+[ext_resource type="Texture2D" uid="uid://dnn30r4u5afa8" path="res://assets/PLACEHOLDER - DELETE/spy-bg-night.png" id="3_1cv5d"]
+
+[node name="SpyOnScene" type="Node2D"]
+position = Vector2(960, 540)
+script = ExtResource("1_b7scp")
+
+[node name="DayBackground" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_aacue")
+metadata/_edit_lock_ = true
+
+[node name="AfternoonBackground" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("3_1cv5d")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -608.0
+offset_top = -444.0
+offset_right = 608.0
+offset_bottom = -268.0
+color = Color(0, 0, 0, 0.67451)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.013
+anchor_top = 0.133
+anchor_right = 0.013
+anchor_bottom = 0.133
+offset_left = 16.192
+offset_top = 16.04
+offset_right = 176.192
+offset_bottom = 48.04
+theme = ExtResource("2_inpwf")
+theme_override_colors/font_color = Color(0, 0.717647, 0, 1)
+text = "Transcript
+"

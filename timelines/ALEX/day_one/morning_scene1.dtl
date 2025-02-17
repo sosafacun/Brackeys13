@@ -1,0 +1,8 @@
+join alex_spy center [z_index="1"]
+[wait time="3.0"]
+alex_spy: Such a peaceful morning. [ns=2]
+alex_spy: I'm so glad [b]I don't have to work on Mondays[/b] [ns=2]
+alex_spy: Maybe I could go for a run. [ns=2]
+[wait time="10.0"]
+alex_spy: Hm? What's wrong? Did you already eat all your food? [ns=2]
+alex_spy: I swear to God you'll ruin me financially. You don't even like cheap food... [ns=2]

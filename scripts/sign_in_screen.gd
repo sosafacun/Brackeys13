@@ -7,9 +7,9 @@ func _on_continue_pressed() -> void:
 
 func _move_to_next_question(node_to_hide: VBoxContainer, node_to_display: VBoxContainer, new_position: float) -> void:
 	var tween: Tween = get_tree().create_tween()
-	tween.tween_property(node_to_hide, "modulate", Color(255,255,255, 0), 0.5)
-	tween.tween_property(self, "position", Vector2(-192, new_position), 0.5)
-	tween.tween_property(node_to_display, "modulate", Color(255,255,255, 1), 0.5)
+	tween.parallel().tween_property(node_to_hide, "modulate", Color(255,255,255, 0), 0.5)
+	tween.parallel().tween_property(self, "position", Vector2(-192, new_position), 0.5)
+	tween.parallel().tween_property(node_to_display, "modulate", Color(255,255,255, 1), 0.5)
 	pass
 
 
