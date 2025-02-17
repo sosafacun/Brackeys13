@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnp4o1bm5fuug"]
+
+[ext_resource type="Script" path="res://utils/scripts/volume_slider.gd" id="1_jn28w"]
+
+[node name="VolumeSlider" type="HBoxContainer"]
+anchors_preset = -1
+anchor_right = 0.371
+anchor_bottom = 0.022
+offset_right = -0.320068
+offset_bottom = 0.239998
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+size_flags_stretch_ratio = 3.0
+script = ExtResource("1_jn28w")
+
+[node name="PropertyLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.25
+text = "PlaceHolderText"
+horizontal_alignment = 1
+
+[node name="SliderValue" type="HSlider" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="PropertyValue" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.15
+text = "100"
+horizontal_alignment = 1
+
+[connection signal="value_changed" from="SliderValue" to="." method="_on_slider_value_value_changed"]

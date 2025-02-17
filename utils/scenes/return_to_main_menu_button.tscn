@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbxduv6s867mp"]
+
+[ext_resource type="Script" path="res://utils/scripts/return_to_main_menu_button.gd" id="1_gpp4k"]
+
+[node name="ReturnToMainMenuButton" type="Button"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -184.0
+offset_right = 192.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Return to Main Menu"
+script = ExtResource("1_gpp4k")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

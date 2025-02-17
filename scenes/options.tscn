@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgfli4yvc65hm"]
+
+[ext_resource type="Script" path="res://scripts/options.gd" id="1_5tm8m"]
+[ext_resource type="PackedScene" uid="uid://bnp4o1bm5fuug" path="res://utils/scenes/volume_slider.tscn" id="2_u487j"]
+[ext_resource type="PackedScene" uid="uid://cbxduv6s867mp" path="res://utils/scenes/return_to_main_menu_button.tscn" id="2_vo8rx"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5tm8m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 64.0
+offset_bottom = 141.0
+grow_horizontal = 2
+
+[node name="MasterVolume" parent="VBoxContainer" instance=ExtResource("2_u487j")]
+layout_mode = 2
+property_label = "Master volume"
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer3" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer4" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer5" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer6" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer7" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VolumeSlider2" parent="VBoxContainer" instance=ExtResource("2_u487j")]
+layout_mode = 2
+property_label = "Music volume"
+
+[node name="Spacer8" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer9" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer10" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer11" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer12" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer13" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Spacer14" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VolumeSlider3" parent="VBoxContainer" instance=ExtResource("2_u487j")]
+layout_mode = 2
+property_label = "SFX volume"
+
+[node name="ReturnToMainMenuButton" parent="." instance=ExtResource("2_vo8rx")]
+layout_mode = 1
+offset_top = -248.0
+offset_bottom = -120.0
