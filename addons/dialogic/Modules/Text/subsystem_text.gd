@@ -20,7 +20,6 @@ signal meta_clicked(meta:Variant)
 
 #endregion
 
-
 # used to color names without searching for all characters each time
 var character_colors := {}
 var color_regex := RegEx.new()
@@ -391,7 +390,7 @@ func parse_text_modifiers(text:String, type:int=TextTypes.DIALOG_TEXT) -> String
 
 func _ready() -> void:
 	dialogic.event_handled.connect(hide_next_indicators)
-
+	
 	_autopauses = {}
 	var autopause_data: Dictionary = ProjectSettings.get_setting('dialogic/text/autopauses', {})
 	for i in autopause_data.keys():
@@ -560,7 +559,6 @@ func effect_lspeed(_text_node:Control, skipped:bool, argument:String) -> void:
 
 func effect_signal(_text_node:Control, _skipped:bool, argument:String) -> void:
 	dialogic.text_signal.emit(argument)
-
 
 func effect_mood(_text_node:Control, _skipped:bool, argument:String) -> void:
 	if argument.is_empty(): return

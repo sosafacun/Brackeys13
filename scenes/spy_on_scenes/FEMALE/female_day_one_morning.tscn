@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm7iqn7a7lvlj"]
+
+[ext_resource type="PackedScene" uid="uid://b3pxh7wvasimk" path="res://scenes/spy_on_scenes/FEMALE/aparment_scene.tscn" id="1_fv8w1"]
+[ext_resource type="Resource" path="res://timelines/ALEX/day_one/morning_scene1.dtl" id="2_owhjo"]
+[ext_resource type="PackedScene" uid="uid://c06n6ca84kyfc" path="res://scenes/spy_on_scenes/spy_on_scene.tscn" id="3_i1ads"]
+
+[node name="ALEXDayOneMorning" type="Node2D"]
+
+[node name="AparmentScene" parent="." instance=ExtResource("1_fv8w1")]
+position = Vector2(960, 424)
+timeline = ExtResource("2_owhjo")
+
+[node name="SpyOnScene" parent="." instance=ExtResource("3_i1ads")]
+metadata/_edit_lock_ = true

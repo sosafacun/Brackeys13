@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://c06n6ca84kyfc"]
+
+[ext_resource type="Script" path="res://scripts/spy_on_scene.gd" id="1_b7scp"]
+[ext_resource type="Texture2D" uid="uid://gnospkvy34kw" path="res://assets/PLACEHOLDER - DELETE/spy-bg-day.png" id="2_aacue"]
+[ext_resource type="Theme" uid="uid://ct4daao2ntnt8" path="res://styles/spy_on_scene.tres" id="2_inpwf"]
+[ext_resource type="Texture2D" uid="uid://dnn30r4u5afa8" path="res://assets/PLACEHOLDER - DELETE/spy-bg-night.png" id="3_1cv5d"]
+[ext_resource type="Texture2D" uid="uid://ceax0qvitoh8x" path="res://assets/PLACEHOLDER - DELETE/notepad.png" id="5_76xb4"]
+
+[node name="SpyOnScene" type="Node2D"]
+position = Vector2(960, 540)
+script = ExtResource("1_b7scp")
+
+[node name="DayBackground" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_aacue")
+metadata/_edit_lock_ = true
+
+[node name="AfternoonBackground" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("3_1cv5d")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -608.0
+offset_top = -444.0
+offset_right = 608.0
+offset_bottom = -268.0
+color = Color(0, 0, 0, 0.67451)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.013
+anchor_top = 0.133
+anchor_right = 0.013
+anchor_bottom = 0.133
+offset_left = 16.192
+offset_top = 16.04
+offset_right = 176.192
+offset_bottom = 48.04
+theme = ExtResource("2_inpwf")
+theme_override_colors/font_color = Color(0, 0.717647, 0, 1)
+text = "Transcript
+"
+
+[node name="Notepad" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-696, 324)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Notepad"]
+polygon = PackedVector2Array(-140, -201.8, -140, -204.3, -149.8, -201, -160, -203.6, -160, 76.8, -158.2, 79.3, -160, 114.7, -160, 148.3, -155, 153.3, -155, 154.9, -141.7, 159.3, -138, 176.9, -138, 187.2, -130, 197.2, -130, 199.3, -89, 203.3, -89, 204.6, -48.9, 202.5, -47, 202.5, 74.8, 205.5, 160, 205.5, 160, 194.8, 148, 169.1, 148, 166, 136.2, 143.5, 135.4, 143.5, 124, 115, 124, 112.1, 15, -133.9, 15, -137.6, 6, -143.6, 6, -144.9, -96.6, -183.5, -99.6, -183.5)
+
+[node name="Notepad" type="Sprite2D" parent="Notepad"]
+texture = ExtResource("5_76xb4")
+
+[connection signal="mouse_entered" from="Notepad" to="." method="_on_notepad_mouse_entered"]
+[connection signal="mouse_exited" from="Notepad" to="." method="_on_notepad_mouse_exited"]
