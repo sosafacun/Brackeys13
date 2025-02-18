@@ -45,7 +45,7 @@ overrides = {
 "box_animation_out": "0",
 "box_color_custom": "Color(1, 1, 1, 0)",
 "box_color_use_global": "false",
-"box_size": "Vector2(1050, 130)",
+"box_size": "Vector2(550, 130)",
 "italics_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans Italic.ttf\"",
 "name_label_custom_color": "Color(0.107117, 0.457031, 0.407825, 1)",
 "name_label_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans.ttf\"",
@@ -55,7 +55,8 @@ overrides = {
 "next_indicator_show_on_questions": "false",
 "normal_font": "\"res://styles/fonts/Courier Prime Sans/Courier Prime Sans.ttf\"",
 "text_custom_color": "Color(0, 0.742188, 0.0115967, 1)",
-"text_use_global_color": "false"
+"text_use_global_color": "false",
+"typing_sounds_sounds_folder": "\"res://assets/audio/Alex/\""
 }
 
 [sub_resource type="Resource" id="Resource_rd2wm"]
@@ -97,4 +98,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_ahxb0")]([])
-metadata/_latest_layer = "14"
+metadata/_latest_layer = "13"

@@ -5,6 +5,10 @@
 [resource]
 script = ExtResource("1_wkng4")
 entries = {
+"CatCheapFood": {
+"name": "CatCheapFood",
+"text": "Her cat doesn't like cheap food."
+},
 "Freeday": {
 "case_sensitive": true,
 "name": "Freeday",

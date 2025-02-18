@@ -28,12 +28,14 @@ gdscript/warnings/inferred_declaration=2
 [dialogic]
 
 directories/dch_directory={
+"Majesty": "res://characters/FEMALE/Majesty.dch",
 "alex_normal": "res://characters/alex_normal.dch",
 "alex_spy": "res://characters/alex_spy.dch",
 "player": "res://characters/player.dch"
 }
 directories/dtl_directory={
-"morning": "res://timelines/ALEX/day_one/morning_scene1.dtl"
+"morning": "res://timelines/ALEX/day_one/morning_scene1.dtl",
+"morning_scene": "res://timelines/ALEX/day_one/morning_scene.dtl"
 }
 variables={
 "FEMALE": {

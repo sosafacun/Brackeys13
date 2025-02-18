@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnxek3ipagusy"
+path="res://.godot/imported/nylon -v2.mp3-3e9101ec6def828c4599ae9d3cf36975.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Alex/nylon -v2.mp3"
+dest_files=["res://.godot/imported/nylon -v2.mp3-3e9101ec6def828c4599ae9d3cf36975.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
