@@ -1,22 +1,63 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbfxnobuq5sam"]
+[gd_scene load_steps=8 format=3 uid="uid://cbfxnobuq5sam"]
 
+[ext_resource type="Script" path="res://scenes/start_game_cutscene.gd" id="1_23vds"]
+[ext_resource type="Texture2D" uid="uid://cv382vkbs4knl" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene1.png" id="1_pho8m"]
 [ext_resource type="PackedScene" uid="uid://ddtbakk8d7t6q" path="res://scenes/phone.tscn" id="1_us5nq"]
-[ext_resource type="PackedScene" uid="uid://cqtxl3knltyto" path="res://scenes/sign_in_screen.tscn" id="2_u5cyh"]
+[ext_resource type="Texture2D" uid="uid://b75nsy3whyjj2" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene2.png" id="2_3vg4q"]
+[ext_resource type="Texture2D" uid="uid://co8vkyxrv3e4" path="res://assets/2d/celu.png" id="3_jgj2p"]
+[ext_resource type="Texture2D" uid="uid://c3kyr42ujio1i" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene3.png" id="3_juv1u"]
+[ext_resource type="Texture2D" uid="uid://cukmmhuedftsj" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene4.png" id="4_yd71w"]
 
 [node name="StartGameCutscene" type="Node2D"]
 position = Vector2(960, 540)
+script = ExtResource("1_23vds")
 
-[node name="Phone" parent="." instance=ExtResource("1_us5nq")]
+[node name="Scene5" type="Node2D" parent="."]
+unique_name_in_owner = true
+modulate = Color(0.964742, 0.964742, 0.964742, 1)
 metadata/_edit_lock_ = true
 
-[node name="SignInScreen" parent="Phone" instance=ExtResource("2_u5cyh")]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = -4.0
-offset_right = 192.0
-offset_bottom = 636.0
+[node name="Phone" parent="Scene5" instance=ExtResource("1_us5nq")]
+offset_left = -130.0
+offset_top = -22.0
+offset_right = -130.0
+offset_bottom = -22.0
+rotation = -0.0436332
+
+[node name="PhoneForeGround" type="Sprite2D" parent="Scene5"]
+position = Vector2(0, -4)
+texture = ExtResource("3_jgj2p")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 964.0
+offset_bottom = 540.0
+color = Color(0.136826, 0.136826, 0.136826, 1)
+metadata/_edit_lock_ = true
+
+[node name="Cut1-scene1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-1600, -220)
+texture = ExtResource("1_pho8m")
+
+[node name="Cut1-scene2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-1568, 956)
+texture = ExtResource("2_3vg4q")
+
+[node name="Cut1-scene3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1304, -332)
+texture = ExtResource("3_juv1u")
+
+[node name="Cut1-scene4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(544, 860)
+texture = ExtResource("4_yd71w")
+
+[node name="AwaitFrameTime" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+
+[connection signal="timeout" from="AwaitFrameTime" to="." method="_on_await_frame_time_timeout"]

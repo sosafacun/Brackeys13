@@ -7,7 +7,8 @@
 script = ExtResource("1_70s7m")
 
 [node name="AparmentBackground" type="Sprite2D" parent="."]
-scale = Vector2(0.7375, 0.677778)
+position = Vector2(126, 88.9999)
+scale = Vector2(0.86875, 0.842593)
 texture = ExtResource("2_7ak6u")
 
 [node name="Character" type="AnimatedSprite2D" parent="."]

@@ -7,7 +7,7 @@
 [node name="ALEXDayOneMorning" type="Node2D"]
 
 [node name="AparmentScene" parent="." instance=ExtResource("1_fv8w1")]
-position = Vector2(960, 424)
+position = Vector2(976, 328)
 timeline = ExtResource("2_48xrs")
 
 [node name="SpyOnScene" parent="." instance=ExtResource("3_i1ads")]

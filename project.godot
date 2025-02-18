@@ -42,10 +42,10 @@ variables={
 "freeday": false
 },
 "player": {
-"big_small_company": false,
+"does_stay": false,
+"is_pet_dog": false,
 "name": "",
-"pet": false,
-"stay_or_go": false
+"works_in_big_company": false
 }
 }
 extensions_folder="res://addons/dialogic_additions"
