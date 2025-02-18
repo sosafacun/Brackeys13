@@ -34,11 +34,13 @@ directories/dch_directory={
 "player": "res://characters/player.dch"
 }
 directories/dtl_directory={
+"Date Night": "res://timelines/ALEX/day_one/Date Night.dtl",
 "morning": "res://timelines/ALEX/day_one/morning_scene1.dtl",
 "morning_scene": "res://timelines/ALEX/day_one/morning_scene.dtl"
 }
 variables={
 "FEMALE": {
+"affection": 0,
 "freeday": false
 },
 "player": {

@@ -1,0 +1,15 @@
+alex_normal: So... this is nice. I usually don't get to go out too much. Work you know keeps me busy most of the days.
+- Oh really? What do you do for work?
+	alex_normal: Nothing much. I just work in an office most of the day.
+- Oh really? What do you like to do when you do get some time away?
+	alex_normal: I like taking a jog around the block once in a while. It's just difficult to find time in the mornings to do it. Or you know, heading to the gym. I'm a little bit of a gym rat.
+	- Oh... you're one of those healthy types
+		set {FEMALE.affection} -= 1
+		alex_normal: What the fuck? What is that supposed to mean?
+	- Oh me too! Well not so much the gym but I love hiking
+		set {FEMALE.affection} += 1
+		alex_normal: Wow really? I love that, maybe you could show me one of your favorite spots sometimes
+if {player.pet} == true:
+	player: What about pets
+else:
+	player: <Empty Text Event>
