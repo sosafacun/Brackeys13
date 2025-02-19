@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pc7625mnehjp"
-path="res://.godot/imported/libreta.1.png-41c81340e1b7c75243220875da74148d.ctex"
+uid="uid://bntqy3fbjkq1w"
+path="res://.godot/imported/pen-filtered.png-5998ee1f13e92bdd40626e6fa3e16972.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/2d/libreta.1.png"
-dest_files=["res://.godot/imported/libreta.1.png-41c81340e1b7c75243220875da74148d.ctex"]
+source_file="res://assets/2d/pen-filtered.png"
+dest_files=["res://.godot/imported/pen-filtered.png-5998ee1f13e92bdd40626e6fa3e16972.ctex"]
 
 [params]
 

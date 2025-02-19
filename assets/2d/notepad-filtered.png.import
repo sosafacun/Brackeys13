@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfixh7r4u6vrf"
-path="res://.godot/imported/libreta.png-913e45003c7674b859b6b71423f1aeda.ctex"
+uid="uid://pc7625mnehjp"
+path="res://.godot/imported/notepad-filtered.png-0023d3594c58af0f5d432467826072f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/2d/libreta.png"
-dest_files=["res://.godot/imported/libreta.png-913e45003c7674b859b6b71423f1aeda.ctex"]
+source_file="res://assets/2d/notepad-filtered.png"
+dest_files=["res://.godot/imported/notepad-filtered.png-0023d3594c58af0f5d432467826072f0.ctex"]
 
 [params]
 

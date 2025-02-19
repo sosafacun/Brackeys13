@@ -7,8 +7,11 @@ func _ready() -> void:
 	%PlayerNameInput.grab_focus()
 
 func _on_continue_pressed() -> void:
-	Dialogic.VAR.player.name = %PlayerNameInput.text
-	_move_to_next_question(%NameContainer, %DogCatContainer, Vector2(-192, -521))
+	if(%PlayerNameInput.text == ""):
+		pass
+	else: 
+		Dialogic.VAR.player.name = %PlayerNameInput.text
+		_move_to_next_question(%NameContainer, %DogCatContainer, Vector2(-192, -521))
 
 func _move_to_next_question(node_to_hide: Control, node_to_display: Control, new_position: Vector2) -> void:
 	var tween: Tween = get_tree().create_tween()

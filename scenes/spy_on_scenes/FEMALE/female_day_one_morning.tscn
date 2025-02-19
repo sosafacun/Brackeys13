@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cm7iqn7a7lvlj"]
+[gd_scene load_steps=5 format=3 uid="uid://cm7iqn7a7lvlj"]
 
+[ext_resource type="Script" path="res://scripts/female_day_one_morning.gd" id="1_fjbdw"]
 [ext_resource type="PackedScene" uid="uid://b3pxh7wvasimk" path="res://scenes/spy_on_scenes/FEMALE/aparment_scene.tscn" id="1_fv8w1"]
 [ext_resource type="Resource" path="res://timelines/ALEX/day_one/morning_scene.dtl" id="2_48xrs"]
 [ext_resource type="PackedScene" uid="uid://c06n6ca84kyfc" path="res://scenes/spy_on_scenes/spy_on_scene.tscn" id="3_i1ads"]
 
-[node name="ALEXDayOneMorning" type="Node2D"]
+[node name="ALEXDayOneMorning" type="Node2D" groups=["faders"]]
+script = ExtResource("1_fjbdw")
 
 [node name="AparmentScene" parent="." instance=ExtResource("1_fv8w1")]
 position = Vector2(976, 328)
@@ -13,3 +15,5 @@ timeline = ExtResource("2_48xrs")
 [node name="SpyOnScene" parent="." instance=ExtResource("3_i1ads")]
 is_day = true
 metadata/_edit_lock_ = true
+
+[connection signal="timeline_ended" from="AparmentScene" to="." method="_on_aparment_scene_timeline_ended"]

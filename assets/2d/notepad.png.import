@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bntqy3fbjkq1w"
-path="res://.godot/imported/lapicera.1.png-fa93a24906a97118bf98cd34b0f60cf6.ctex"
+uid="uid://cfixh7r4u6vrf"
+path="res://.godot/imported/notepad.png-1131adf6838dc67989a1d948234261ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/2d/lapicera.1.png"
-dest_files=["res://.godot/imported/lapicera.1.png-fa93a24906a97118bf98cd34b0f60cf6.ctex"]
+source_file="res://assets/2d/notepad.png"
+dest_files=["res://.godot/imported/notepad.png-1131adf6838dc67989a1d948234261ac.ctex"]
 
 [params]
 

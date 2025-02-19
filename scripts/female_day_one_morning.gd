@@ -1,6 +1,7 @@
-extends Control
+extends Node2D
 
 signal fade_scene
 
-func _on_return_to_main_menu_button_pressed() -> void:
+
+func _on_aparment_scene_timeline_ended() -> void:
 	fade_scene.emit("res://scenes/main_menu.tscn", self)

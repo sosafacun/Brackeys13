@@ -11,13 +11,12 @@ config_version=5
 [application]
 
 config/name="Brackeys13GameJamGame"
-run/main_scene="res://scenes/main_menu.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Shared="*res://utils/scripts/shared.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [debug]
@@ -84,6 +83,10 @@ window/stretch/mode="canvas_items"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+faders="Determines if the scene should fade"
 
 [input]
 

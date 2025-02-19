@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbfxnobuq5sam"]
+
+[ext_resource type="Script" path="res://scripts/start_game_cutscene-1.gd" id="1_e5gu7"]
+[ext_resource type="Texture2D" uid="uid://cv382vkbs4knl" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene1.png" id="4_4rgn2"]
+[ext_resource type="Texture2D" uid="uid://b75nsy3whyjj2" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene2.png" id="5_5513v"]
+[ext_resource type="Texture2D" uid="uid://c3kyr42ujio1i" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene3.png" id="6_iu2kt"]
+[ext_resource type="Texture2D" uid="uid://cukmmhuedftsj" path="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene4.png" id="7_invj7"]
+
+[node name="StartGameCutscene-1" type="Node2D" groups=["faders"]]
+position = Vector2(960, 540)
+script = ExtResource("1_e5gu7")
+
+[node name="Cut1-scene1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-1600, -220)
+texture = ExtResource("4_4rgn2")
+
+[node name="Cut1-scene2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-1568, 956)
+texture = ExtResource("5_5513v")
+
+[node name="Cut1-scene3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1304, -332)
+texture = ExtResource("6_iu2kt")
+
+[node name="Cut1-scene4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(544, 860)
+texture = ExtResource("7_invj7")
+
+[node name="AwaitFrameTime" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 3.0
+
+[connection signal="timeout" from="AwaitFrameTime" to="." method="_on_await_frame_time_timeout"]

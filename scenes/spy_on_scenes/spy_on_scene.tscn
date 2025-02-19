@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://scripts/spy_on_scene.gd" id="1_b7scp"]
 [ext_resource type="Texture2D" uid="uid://ms2h2fc16grc" path="res://assets/2d/light.png" id="2_7ceso"]
 [ext_resource type="Theme" uid="uid://ct4daao2ntnt8" path="res://styles/spy_on_scene.tres" id="2_inpwf"]
-[ext_resource type="Texture2D" uid="uid://cefrqvhm8eafy" path="res://assets/2d/compu.png" id="2_pabb2"]
-[ext_resource type="Texture2D" uid="uid://cfixh7r4u6vrf" path="res://assets/2d/libreta.png" id="5_okpgy"]
+[ext_resource type="Texture2D" uid="uid://cefrqvhm8eafy" path="res://assets/2d/pc.png" id="2_pabb2"]
+[ext_resource type="Texture2D" uid="uid://cfixh7r4u6vrf" path="res://assets/2d/notepad.png" id="5_okpgy"]
 [ext_resource type="Shader" path="res://styles/shaders/dropshadow.gdshader" id="5_sj5cp"]
-[ext_resource type="Texture2D" uid="uid://dniohquigm6hw" path="res://assets/2d/lapicera.png" id="6_2igmw"]
+[ext_resource type="Texture2D" uid="uid://dniohquigm6hw" path="res://assets/2d/pen.png" id="6_2igmw"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_56b28"]
 shader = ExtResource("5_sj5cp")
