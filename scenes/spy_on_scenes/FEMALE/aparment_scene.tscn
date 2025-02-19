@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3pxh7wvasimk"]
 
 [ext_resource type="Script" path="res://scripts/aparment_scene.gd" id="1_70s7m"]
-[ext_resource type="Texture2D" uid="uid://b748bcd8s6mvf" path="res://assets/PLACEHOLDER - DELETE/aparment.png" id="2_7ak6u"]
+[ext_resource type="Texture2D" uid="uid://c27g11sevxr24" path="res://assets/2d/ALEX-room.png" id="2_xorlc"]
 
 [node name="AparmentScene" type="Node2D"]
 script = ExtResource("1_70s7m")
@@ -9,6 +9,6 @@ script = ExtResource("1_70s7m")
 [node name="AparmentBackground" type="Sprite2D" parent="."]
 position = Vector2(126, 88.9999)
 scale = Vector2(0.86875, 0.842593)
-texture = ExtResource("2_7ak6u")
+texture = ExtResource("2_xorlc")
 
 [node name="Character" type="AnimatedSprite2D" parent="."]
