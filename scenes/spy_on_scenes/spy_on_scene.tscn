@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c06n6ca84kyfc"]
 
-[ext_resource type="Script" path="res://scripts/spy_on_scene.gd" id="1_b7scp"]
+[ext_resource type="Script" path="res://scripts/spy_on_scenes/spy_on_scene.gd" id="1_b7scp"]
 [ext_resource type="Texture2D" uid="uid://ms2h2fc16grc" path="res://assets/2d/light.png" id="2_7ceso"]
 [ext_resource type="Theme" uid="uid://ct4daao2ntnt8" path="res://styles/spy_on_scene.tres" id="2_inpwf"]
 [ext_resource type="Texture2D" uid="uid://cefrqvhm8eafy" path="res://assets/2d/pc.png" id="2_pabb2"]

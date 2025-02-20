@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Shared="*res://utils/scripts/Shared.gd"
 
 [debug]
 
@@ -30,11 +31,18 @@ directories/dch_directory={
 "Majesty": "res://characters/FEMALE/Majesty.dch",
 "alex_normal": "res://characters/alex_normal.dch",
 "alex_spy": "res://characters/alex_spy.dch",
+"chat": "res://timelines/SAM/chat.dch",
+"madoka": "res://timelines/SAM/madoka.dch",
 "phone": "res://characters/phone.dch",
-"player": "res://characters/player.dch"
+"player": "res://characters/player.dch",
+"sam_spy_on": "res://timelines/SAM/sam_spy_on.dch"
 }
 directories/dtl_directory={
+"Morning_day_two": "res://timelines/SAM/Morning_day_two.dtl",
+"afternoon_day_one": "res://timelines/SAM/afternoon_day_one.dtl",
+"afternoon_day_two": "res://timelines/SAM/afternoon_day_two.dtl",
 "afternoon_scene": "res://timelines/ALEX/day_one/afternoon_scene.dtl",
+"morning_day_one": "res://timelines/SAM/morning_day_one.dtl",
 "morning_scene": "res://timelines/ALEX/day_one/morning_scene.dtl"
 }
 variables={
@@ -105,6 +113,10 @@ interact={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 

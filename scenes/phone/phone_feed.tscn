@@ -1,0 +1,210 @@
+[gd_scene load_steps=11 format=3 uid="uid://dxekjyxfkxiaa"]
+
+[ext_resource type="Script" path="res://scripts/phone/phone_feed.gd" id="1_tdifc"]
+[ext_resource type="Texture2D" uid="uid://deqfmma6umgnm" path="res://assets/2d/phone_icons/battery-mid-svgrepo-com.svg" id="2_1y4ee"]
+[ext_resource type="Texture2D" uid="uid://ceb7higvwrwnl" path="res://assets/2d/phone_icons/OneGram.png" id="2_cypc6"]
+[ext_resource type="Texture2D" uid="uid://dct101j7vgvht" path="res://assets/2d/phone_icons/network-cellular-svgrepo-com.svg" id="3_x4b74"]
+[ext_resource type="Texture2D" uid="uid://vn60jr70v0jr" path="res://assets/2d/phone_icons/wi-fi-svgrepo-com.svg" id="4_o24x3"]
+[ext_resource type="Texture2D" uid="uid://qd7g1d5ao7ch" path="res://assets/2d/phone_icons/email-svgrepo-com.svg" id="5_bdlws"]
+[ext_resource type="PackedScene" uid="uid://mrymhbit7lsb" path="res://scenes/phone/like_button.tscn" id="6_rtsnk"]
+[ext_resource type="Texture2D" uid="uid://babywycwdqq07" path="res://assets/2d/phone_icons/instagram-2-svgrepo-com.svg" id="6_supxm"]
+[ext_resource type="Texture2D" uid="uid://ciiq08rf6rc5a" path="res://assets/2d/phone_icons/heart-alt-svgrepo-com.svg" id="7_3o1ml"]
+[ext_resource type="Texture2D" uid="uid://csfuh3dbe5seu" path="res://assets/2d/phone_icons/spacer.png" id="9_8mr8h"]
+
+[node name="PhoneFeed" type="Control"]
+layout_mode = 3
+anchor_right = 0.262
+anchor_bottom = 1.0
+offset_right = 0.959961
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_tdifc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 38.0
+offset_top = 251.0
+offset_right = 463.0
+offset_bottom = 920.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.00285846
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="PicOne" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 5
+
+[node name="Spacer" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("9_8mr8h")
+
+[node name="LikeButton" parent="Control/ScrollContainer/VBoxContainer/Spacer" instance=ExtResource("6_rtsnk")]
+layout_mode = 1
+
+[node name="PicTwo" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 5
+
+[node name="Spacer2" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("9_8mr8h")
+
+[node name="LikeButton" parent="Control/ScrollContainer/VBoxContainer/Spacer2" instance=ExtResource("6_rtsnk")]
+layout_mode = 1
+
+[node name="PicThree" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 5
+
+[node name="Spacer3" type="TextureRect" parent="Control/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("9_8mr8h")
+
+[node name="LikeButton" parent="Control/ScrollContainer/VBoxContainer/Spacer3" instance=ExtResource("6_rtsnk")]
+layout_mode = 1
+offset_left = 7.24603
+offset_top = 20.9804
+offset_right = 7.24603
+offset_bottom = 20.9803
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_right = 0.994
+anchor_bottom = 0.225
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cypc6")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 503.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Icons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.8936
+offset_top = 2.51596
+offset_right = 482.894
+offset_bottom = 42.516
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_top = 44.0
+offset_right = 48.0
+offset_bottom = 84.0
+rotation = -3.14159
+texture = ExtResource("2_1y4ee")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.898
+anchor_right = 0.898
+offset_left = -39.856
+offset_top = 9.0
+offset_right = 0.143982
+offset_bottom = 36.0
+texture = ExtResource("3_x4b74")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.729
+anchor_right = 0.814
+offset_left = 1.91199
+offset_top = 8.0
+offset_right = -2.20801
+offset_bottom = 42.0
+texture = ExtResource("4_o24x3")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.075
+anchor_right = 0.025
+anchor_bottom = 0.075
+offset_left = 0.2
+offset_right = 40.2
+offset_bottom = 42.0
+texture = ExtResource("5_bdlws")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.112
+anchor_right = 0.112
+offset_left = 0.135998
+offset_top = 9.0
+offset_right = 31.136
+offset_bottom = 40.0
+texture = ExtResource("6_supxm")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Icons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.2
+anchor_right = 0.18
+anchor_bottom = 0.2
+offset_left = 0.0399933
+offset_right = 35.04
+offset_bottom = 33.0
+texture = ExtResource("7_3o1ml")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Icons"]
+layout_mode = 0
+offset_left = -29.0
+offset_top = 85.0
+offset_right = 11.0
+offset_bottom = 125.0
+
+[connection signal="scroll_ended" from="Control/ScrollContainer" to="." method="_on_scroll_container_scroll_ended"]
