@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b748bcd8s6mvf"
-path="res://.godot/imported/aparment.png-4fd50eee404c9e7e0162090790c197d1.ctex"
+uid="uid://caeaxebfchj5w"
+path="res://.godot/imported/SAM-selfie.png-f90db4c0af5e05120d6177eef1294093.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/aparment.png"
-dest_files=["res://.godot/imported/aparment.png-4fd50eee404c9e7e0162090790c197d1.ctex"]
+source_file="res://assets/2d/phone_feed/SAM-selfie.png"
+dest_files=["res://.godot/imported/SAM-selfie.png-f90db4c0af5e05120d6177eef1294093.ctex"]
 
 [params]
 

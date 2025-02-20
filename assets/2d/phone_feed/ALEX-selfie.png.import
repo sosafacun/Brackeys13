@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3kyr42ujio1i"
-path="res://.godot/imported/cut1-scene3.png-bf9622f2d6ebcc56d8a7e6d7fee794a5.ctex"
+uid="uid://b1dkxrcvwlfcn"
+path="res://.godot/imported/ALEX-selfie.png-1fa687f4d6d433a47d520e6574f3eb8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene3.png"
-dest_files=["res://.godot/imported/cut1-scene3.png-bf9622f2d6ebcc56d8a7e6d7fee794a5.ctex"]
+source_file="res://assets/2d/phone_feed/ALEX-selfie.png"
+dest_files=["res://.godot/imported/ALEX-selfie.png-1fa687f4d6d433a47d520e6574f3eb8c.ctex"]
 
 [params]
 

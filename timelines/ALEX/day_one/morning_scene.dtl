@@ -1,7 +1,7 @@
 join alex_spy center
 join Majesty center
 [wait time="3.0"]
-alex_spy: Morning, Majesty [ns=3]
+alex_spy: Morning, [url={"majesty" \: "entries"}]Majesty[/url][ns=3]
 alex_spy: Big day today, buddy. No heels for me- patrol day [ns=3]
 alex_spy: Majesty, you would probably hate patrol just like the rest of my coworkers. But how could you hate patrol day? [ns=3]
 alex_spy: You get to dress down, I don't have to wear that stuffy blazer or the heels. [ns=3]

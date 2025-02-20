@@ -9,12 +9,11 @@ position = Vector2(960, 540)
 script = ExtResource("1_5aka3")
 
 [node name="Phone" parent="." instance=ExtResource("1_oslcq")]
-offset_left = -128.0
-offset_top = -16.0
-offset_right = -128.0
-offset_bottom = -16.0
-rotation = -0.0436332
-metadata/_edit_lock_ = true
+offset_left = -136.0
+offset_top = -20.0
+offset_right = -136.0
+offset_bottom = -20.0
+rotation = -0.0471239
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_itrqw")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnn30r4u5afa8"
-path="res://.godot/imported/spy-bg-night.png-5046134a5b1f4f34ffd2c273799073d5.ctex"
+uid="uid://c8lc4xfhfbvxe"
+path="res://.godot/imported/feed_icons.png-c0000d1b36fa86f1262ee0b1e3f1258a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/spy-bg-night.png"
-dest_files=["res://.godot/imported/spy-bg-night.png-5046134a5b1f4f34ffd2c273799073d5.ctex"]
+source_file="res://assets/2d/phone_icons/feed_icons.png"
+dest_files=["res://.godot/imported/feed_icons.png-c0000d1b36fa86f1262ee0b1e3f1258a.ctex"]
 
 [params]
 

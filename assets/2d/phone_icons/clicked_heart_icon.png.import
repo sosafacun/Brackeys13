@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b75nsy3whyjj2"
-path="res://.godot/imported/cut1-scene2.png-10581ce1717266fd28099397f894b05b.ctex"
+uid="uid://bn68og5hmudh2"
+path="res://.godot/imported/clicked_heart_icon.png-9823b2183400334d47e95359ea5fc924.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene2.png"
-dest_files=["res://.godot/imported/cut1-scene2.png-10581ce1717266fd28099397f894b05b.ctex"]
+source_file="res://assets/2d/phone_icons/clicked_heart_icon.png"
+dest_files=["res://.godot/imported/clicked_heart_icon.png-9823b2183400334d47e95359ea5fc924.ctex"]
 
 [params]
 

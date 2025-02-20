@@ -30,15 +30,16 @@ directories/dch_directory={
 "Majesty": "res://characters/FEMALE/Majesty.dch",
 "alex_normal": "res://characters/alex_normal.dch",
 "alex_spy": "res://characters/alex_spy.dch",
+"phone": "res://characters/phone.dch",
 "player": "res://characters/player.dch"
 }
 directories/dtl_directory={
-"morning": "res://timelines/ALEX/day_one/morning_scene1.dtl",
+"afternoon_scene": "res://timelines/ALEX/day_one/afternoon_scene.dtl",
 "morning_scene": "res://timelines/ALEX/day_one/morning_scene.dtl"
 }
 variables={
 "FEMALE": {
-"freeday": false
+"majesty": 0
 },
 "player": {
 "does_stay": false,

@@ -19,7 +19,6 @@ func _ready() -> void:
 		%Sun.color = Color("f94802")
 		$".".modulate = Color("ffe4dd")
 	
-	Dialogic.Text.meta_clicked.connect(_on_text_clicked)
 
 func _on_notepad_mouse_entered() -> void:
 	%NotepadSprite.material.set_shader_parameter("shadow_offset", SHADOW_OFFSET_VALUE)
@@ -38,10 +37,3 @@ func _select_notepad(new_notepad_position: Vector2) -> void:
 	var tween: Tween = get_tree().create_tween()
 	tween.parallel().tween_property(%Notepad, "position", new_notepad_position, 0.05)
 	
-
-func _on_text_clicked(meta: Variant) -> void:
-	var info: String = str(meta)
-	var entry:Dictionary = Dialogic.Glossary.get_entry(info)
-	
-	if(entry.has("text")):
-		print(entry["text"])

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceax0qvitoh8x"
-path="res://.godot/imported/notepad.png-fc0edf39414172f535392dd2973c7fb5.ctex"
+uid="uid://qe311850bf7w"
+path="res://.godot/imported/C 2.png-00fd19235fac0baf9e7bbe06150c2968.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/notepad.png"
-dest_files=["res://.godot/imported/notepad.png-fc0edf39414172f535392dd2973c7fb5.ctex"]
+source_file="res://assets/2d/cutscenes/C 2.png"
+dest_files=["res://.godot/imported/C 2.png-00fd19235fac0baf9e7bbe06150c2968.ctex"]
 
 [params]
 

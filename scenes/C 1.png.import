@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cukmmhuedftsj"
-path="res://.godot/imported/cut1-scene4.png-c2f5f377314cc6b70363d1b3fe081fbf.ctex"
+uid="uid://dsc22okkaeprm"
+path="res://.godot/imported/C 1.png-466f03e3446b6b406afd6c348204476d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDER - DELETE/CUTSCENES/cut1-scene4.png"
-dest_files=["res://.godot/imported/cut1-scene4.png-c2f5f377314cc6b70363d1b3fe081fbf.ctex"]
+source_file="res://scenes/C 1.png"
+dest_files=["res://.godot/imported/C 1.png-466f03e3446b6b406afd6c348204476d.ctex"]
 
 [params]
 
