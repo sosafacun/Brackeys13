@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/credits.gd" id="1_basto"]
 [ext_resource type="PackedScene" uid="uid://cbxduv6s867mp" path="res://utils/scenes/return_to_main_menu_button.tscn" id="2_477n2"]
 
-[node name="Credits" type="Control"]
+[node name="Credits" type="Control" groups=["faders"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,3 +16,5 @@ script = ExtResource("1_basto")
 layout_mode = 1
 offset_top = -249.0
 offset_bottom = -121.0
+
+[connection signal="pressed" from="ReturnToMainMenuButton" to="." method="_on_return_to_main_menu_button_pressed"]

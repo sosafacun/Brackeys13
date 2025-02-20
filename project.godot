@@ -11,13 +11,12 @@ config_version=5
 [application]
 
 config/name="Brackeys13GameJamGame"
-run/main_scene="res://scenes/main_menu.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Shared="*res://utils/scripts/shared.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [debug]
@@ -31,23 +30,22 @@ directories/dch_directory={
 "Majesty": "res://characters/FEMALE/Majesty.dch",
 "alex_normal": "res://characters/alex_normal.dch",
 "alex_spy": "res://characters/alex_spy.dch",
+"phone": "res://characters/phone.dch",
 "player": "res://characters/player.dch"
 }
 directories/dtl_directory={
-"Date Night": "res://timelines/ALEX/day_one/Date Night.dtl",
-"morning": "res://timelines/ALEX/day_one/morning_scene1.dtl",
+"afternoon_scene": "res://timelines/ALEX/day_one/afternoon_scene.dtl",
 "morning_scene": "res://timelines/ALEX/day_one/morning_scene.dtl"
 }
 variables={
 "FEMALE": {
-"affection": 0,
-"freeday": false
+"majesty": 0
 },
 "player": {
-"big_small_company": false,
+"does_stay": false,
+"is_pet_dog": false,
 "name": "",
-"pet": false,
-"stay_or_go": false
+"works_in_big_company": false
 }
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -86,6 +84,10 @@ window/stretch/mode="canvas_items"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+faders="Determines if the scene should fade"
 
 [input]
 

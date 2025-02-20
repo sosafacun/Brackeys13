@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bnp4o1bm5fuug" path="res://utils/scenes/volume_slider.tscn" id="2_u487j"]
 [ext_resource type="PackedScene" uid="uid://cbxduv6s867mp" path="res://utils/scenes/return_to_main_menu_button.tscn" id="2_vo8rx"]
 
-[node name="Options" type="Control"]
+[node name="Options" type="Control" groups=["faders"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -79,3 +79,5 @@ property_label = "SFX volume"
 layout_mode = 1
 offset_top = -248.0
 offset_bottom = -120.0
+
+[connection signal="pressed" from="ReturnToMainMenuButton" to="." method="_on_return_to_main_menu_button_pressed"]

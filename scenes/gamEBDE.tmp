@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvqgb7kol1pa4"]
+
+[ext_resource type="PackedScene" uid="uid://bccxiw8p7tm67" path="res://scenes/main_menu.tscn" id="1_8bno5"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_nfcr0"]
+[ext_resource type="PackedScene" uid="uid://cp26l5f3ebyb5" path="res://utils/scenes/fade_to_black_transition.tscn" id="2_saotx"]
+
+[node name="Game" type="CanvasLayer"]
+script = ExtResource("1_nfcr0")
+
+[node name="MainMenu" parent="." instance=ExtResource("1_8bno5")]
+
+[node name="FadeToBlackTransition" parent="." instance=ExtResource("2_saotx")]
+
+[connection signal="button_pressed" from="MainMenu" to="." method="_on_main_menu_button_pressed"]

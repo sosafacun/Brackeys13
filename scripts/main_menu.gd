@@ -1,16 +1,17 @@
 extends Control
-class_name MainMenu 
+class_name MainMenu
+
+signal fade_scene
 
 func _on_start_game_button_pressed() -> void:
-	get_tree().change_scene_to_file("../scenes/start_game_cutscene.tscn")
-
+	fade_scene.emit("res://scenes/start_game_cutscene-1.tscn", self)
 
 func _on_options_pressed() -> void:
-	get_tree().change_scene_to_file("../scenes/options.tscn")
+	fade_scene.emit("res://scenes/options.tscn", self)
 
 
 func _on_credits_pressed() -> void:
-	get_tree().change_scene_to_file("../scenes/credits.tscn")
+	fade_scene.emit("res://scenes/credits.tscn", self)
 
 
 func _on_quit_game_button_pressed() -> void:

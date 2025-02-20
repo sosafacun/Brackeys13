@@ -1,202 +1,376 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqtxl3knltyto"]
+[gd_scene load_steps=4 format=3 uid="uid://cqtxl3knltyto"]
 
+[ext_resource type="Theme" uid="uid://ct4daao2ntnt8" path="res://styles/spy_on_scene.tres" id="1_0mhbx"]
 [ext_resource type="Script" path="res://scripts/sign_in_screen.gd" id="1_aiap3"]
+[ext_resource type="Texture2D" uid="uid://ciiq08rf6rc5a" path="res://assets/2d/phone_icons/heart-alt-svgrepo-com.svg" id="3_nf6mr"]
 
-[node name="SignInScreen" type="VBoxContainer"]
-anchors_preset = -1
+[node name="SignInScreen" type="Control"]
+layout_mode = 3
 anchor_right = 0.2
-anchor_bottom = 0.844
-offset_bottom = 0.47998
+offset_bottom = 384.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
+theme = ExtResource("1_0mhbx")
 script = ExtResource("1_aiap3")
 
-[node name="NameInput" type="VBoxContainer" parent="."]
+[node name="NameContainer" type="Control" parent="."]
 unique_name_in_owner = true
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 320.0
+grow_horizontal = 2
 metadata/_edit_lock_ = true
 
-[node name="NameLabel" type="Label" parent="NameInput"]
+[node name="NameInput" type="VBoxContainer" parent="NameContainer"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="NameLabel" type="Label" parent="NameContainer/NameInput"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+theme_override_font_sizes/font_size = 32
 text = "What's your name?"
 horizontal_alignment = 1
 
-[node name="PlayerNameInput" type="LineEdit" parent="NameInput"]
-unique_name_in_owner = true
+[node name="Spacer2" type="Control" parent="NameContainer/NameInput"]
 layout_mode = 2
 size_flags_vertical = 3
-placeholder_text = "Enter your name here."
-alignment = 1
-max_length = 25
-
-[node name="Continue" type="Button" parent="NameInput"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-text = "Continue"
-
-[node name="Spacer" type="Control" parent="."]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.65
-metadata/_edit_lock_ = true
-
-[node name="DogOrCat" type="VBoxContainer" parent="."]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
 size_flags_stretch_ratio = 0.05
 metadata/_edit_lock_ = true
 
-[node name="DogOrCatLabel" type="Label" parent="DogOrCat"]
+[node name="PlayerNameInput" type="LineEdit" parent="NameContainer/NameInput"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
+size_flags_stretch_ratio = 0.05
+placeholder_text = "Enter your name here."
+alignment = 1
+max_length = 25
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+drag_and_drop_selection_enabled = false
+caret_blink = true
+
+[node name="Spacer" type="Control" parent="NameContainer/NameInput"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NameContainer/NameInput"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+
+[node name="Spacer2" type="Control" parent="NameContainer/NameInput/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.22
+metadata/_edit_lock_ = true
+
+[node name="Continue" type="Button" parent="NameContainer/NameInput/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Continue"
+
+[node name="Spacer" type="Control" parent="NameContainer/NameInput/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.22
+metadata/_edit_lock_ = true
+
+[node name="DogCatContainer" type="Control" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_lock_ = true
+
+[node name="DogOrCat" type="VBoxContainer" parent="DogCatContainer"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
+
+[node name="DogOrCatLabel" type="Label" parent="DogCatContainer/DogOrCat"]
+custom_minimum_size = Vector2(348, 0)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+theme_override_font_sizes/font_size = 32
 text = "Are you a dog person or a cat person?"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_lock_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="DogOrCat"]
+[node name="Spacer2" type="Control" parent="DogCatContainer/DogOrCat"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
 
-[node name="Spacer" type="Control" parent="DogOrCat/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="DogCatContainer/DogOrCat"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
+
+[node name="Spacer" type="Control" parent="DogCatContainer/DogOrCat/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.35
+metadata/_edit_lock_ = true
 
-[node name="DogButton" type="Button" parent="DogOrCat/HBoxContainer"]
+[node name="DogButton" type="Button" parent="DogCatContainer/DogOrCat/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Woof"
+metadata/_edit_lock_ = true
 
-[node name="Spacer2" type="Control" parent="DogOrCat/HBoxContainer"]
+[node name="Spacer2" type="Control" parent="DogCatContainer/DogOrCat/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.22
+metadata/_edit_lock_ = true
 
-[node name="CatButton" type="Button" parent="DogOrCat/HBoxContainer"]
+[node name="CatButton" type="Button" parent="DogCatContainer/DogOrCat/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Meow"
+metadata/_edit_lock_ = true
 
-[node name="Spacer3" type="Control" parent="DogOrCat/HBoxContainer"]
+[node name="Spacer3" type="Control" parent="DogCatContainer/DogOrCat/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.35
-
-[node name="Spacer2" type="Control" parent="."]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.65
 metadata/_edit_lock_ = true
 
-[node name="StayOrGo" type="VBoxContainer" parent="."]
+[node name="StayOrGoContainer" type="Control" parent="."]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
-layout_mode = 2
+layout_mode = 1
+anchor_top = 1.667
+anchor_right = 1.0
+anchor_bottom = 1.667
+offset_top = 63.8719
+offset_bottom = 383.872
+grow_horizontal = 2
+metadata/_edit_lock_ = true
+
+[node name="StayOrGo" type="VBoxContainer" parent="StayOrGoContainer"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 0
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
 metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="StayOrGo"]
+[node name="StayOrGoLabel" type="Label" parent="StayOrGoContainer/StayOrGo"]
+custom_minimum_size = Vector2(348, 0)
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
+size_flags_stretch_ratio = 0.05
+theme_override_font_sizes/font_size = 32
 text = "Do you prefer to stay in or to go out?"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_lock_ = true
 
-[node name="Control" type="Control" parent="StayOrGo"]
+[node name="Spacer2" type="Control" parent="StayOrGoContainer/StayOrGo"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="StayOrGo"]
+[node name="HBoxContainer" type="HBoxContainer" parent="StayOrGoContainer/StayOrGo"]
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
 
-[node name="Spacer" type="Control" parent="StayOrGo/HBoxContainer"]
+[node name="Spacer" type="Control" parent="StayOrGoContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.35
+metadata/_edit_lock_ = true
 
-[node name="StayInButton" type="Button" parent="StayOrGo/HBoxContainer"]
+[node name="StayInButton" type="Button" parent="StayOrGoContainer/StayOrGo/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Stay In"
+text = "Stay in"
+metadata/_edit_lock_ = true
 
-[node name="Spacer2" type="Control" parent="StayOrGo/HBoxContainer"]
+[node name="Spacer2" type="Control" parent="StayOrGoContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.22
+metadata/_edit_lock_ = true
 
-[node name="GoOutButton" type="Button" parent="StayOrGo/HBoxContainer"]
+[node name="GoOutButton" type="Button" parent="StayOrGoContainer/StayOrGo/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Go out"
+metadata/_edit_lock_ = true
 
-[node name="Spacer3" type="Control" parent="StayOrGo/HBoxContainer"]
+[node name="Spacer3" type="Control" parent="StayOrGoContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.35
-
-[node name="Spacer3" type="Control" parent="."]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.65
 metadata/_edit_lock_ = true
 
-[node name="BigOrSmallCompany" type="VBoxContainer" parent="."]
+[node name="BigSmallContainer" type="Control" parent="."]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
-layout_mode = 2
+layout_mode = 1
+anchor_top = 2.667
+anchor_right = 1.0
+anchor_bottom = 2.667
+offset_top = -0.128052
+offset_bottom = 319.872
+grow_horizontal = 2
 metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="BigOrSmallCompany"]
+[node name="StayOrGo" type="VBoxContainer" parent="BigSmallContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+metadata/_edit_lock_ = true
+
+[node name="BigSmallLabel" type="Label" parent="BigSmallContainer/StayOrGo"]
+custom_minimum_size = Vector2(348, 0)
 layout_mode = 2
 size_flags_vertical = 3
-text = "Do work in a big or a small company?"
+size_flags_stretch_ratio = 0.05
+theme_override_font_sizes/font_size = 32
+text = "Do you work in a big company or a small business?"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_lock_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="BigOrSmallCompany"]
+[node name="Spacer2" type="Control" parent="BigSmallContainer/StayOrGo"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
 
-[node name="Spacer" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="BigSmallContainer/StayOrGo"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+metadata/_edit_lock_ = true
+
+[node name="Spacer" type="Control" parent="BigSmallContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+metadata/_edit_lock_ = true
 
-[node name="BigCompanyButton" type="Button" parent="BigOrSmallCompany/HBoxContainer"]
+[node name="BigCompanyButton" type="Button" parent="BigSmallContainer/StayOrGo/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Big Company"
+metadata/_edit_lock_ = true
 
-[node name="Spacer2" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+[node name="Spacer2" type="Control" parent="BigSmallContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.22
+metadata/_edit_lock_ = true
 
-[node name="SmallCompanyButton" type="Button" parent="BigOrSmallCompany/HBoxContainer"]
+[node name="SmallBusinessButton" type="Button" parent="BigSmallContainer/StayOrGo/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Small Company
-"
+text = "Small Business"
+metadata/_edit_lock_ = true
 
-[node name="Spacer3" type="Control" parent="BigOrSmallCompany/HBoxContainer"]
+[node name="Spacer3" type="Control" parent="BigSmallContainer/StayOrGo/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.35
+metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="NameInput/Continue" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="DogOrCat/HBoxContainer/DogButton" to="." method="_on_dog_button_pressed"]
-[connection signal="pressed" from="DogOrCat/HBoxContainer/CatButton" to="." method="_on_cat_button_pressed"]
-[connection signal="pressed" from="StayOrGo/HBoxContainer/StayInButton" to="." method="_on_stay_in_button_pressed"]
-[connection signal="pressed" from="StayOrGo/HBoxContainer/GoOutButton" to="." method="_on_go_out_button_pressed"]
+[node name="CongratulationsContainer" type="Control" parent="."]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 0
+offset_left = 384.0
+offset_top = 1024.0
+offset_right = 768.0
+offset_bottom = 1344.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CongratulationsContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CongratulationsContainer/VBoxContainer"]
+custom_minimum_size = Vector2(384, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "Thank you for your registration"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CongratulationsContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("3_nf6mr")
+expand_mode = 4
+
+[connection signal="pressed" from="NameContainer/NameInput/HBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="DogCatContainer/DogOrCat/HBoxContainer/DogButton" to="." method="_on_dog_button_pressed"]
+[connection signal="pressed" from="DogCatContainer/DogOrCat/HBoxContainer/CatButton" to="." method="_on_cat_button_pressed"]
+[connection signal="pressed" from="StayOrGoContainer/StayOrGo/HBoxContainer/StayInButton" to="." method="_on_stay_in_button_pressed"]
+[connection signal="pressed" from="StayOrGoContainer/StayOrGo/HBoxContainer/GoOutButton" to="." method="_on_go_out_button_pressed"]
+[connection signal="pressed" from="BigSmallContainer/StayOrGo/HBoxContainer/BigCompanyButton" to="." method="_on_big_company_button_pressed"]
+[connection signal="pressed" from="BigSmallContainer/StayOrGo/HBoxContainer/SmallBusinessButton" to="." method="_on_small_business_button_pressed"]

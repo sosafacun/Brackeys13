@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn02eqp2nsfyv"]
+
+[ext_resource type="Script" path="res://scripts/phone_sign_in.gd" id="1_5aka3"]
+[ext_resource type="PackedScene" uid="uid://ddtbakk8d7t6q" path="res://scenes/phone.tscn" id="1_oslcq"]
+[ext_resource type="Texture2D" uid="uid://co8vkyxrv3e4" path="res://assets/2d/phone.png" id="2_itrqw"]
+
+[node name="PhoneSignIn" type="Node2D" groups=["faders"]]
+position = Vector2(960, 540)
+script = ExtResource("1_5aka3")
+
+[node name="Phone" parent="." instance=ExtResource("1_oslcq")]
+offset_left = -136.0
+offset_top = -20.0
+offset_right = -136.0
+offset_bottom = -20.0
+rotation = -0.0471239
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_itrqw")
+metadata/_edit_lock_ = true
+
+[connection signal="on_finished_scroll" from="Phone" to="." method="_on_phone_on_finished_scroll"]
