@@ -9,19 +9,19 @@
 "default": {
 "mode": 0,
 "name": "default",
-"pitch_base": 0.5,
+"pitch_base": 1.0,
 "pitch_variance": 0.0,
 "skip_characters": 0.0,
-"sound_path": "res://assets/audio/Alex/nylon -v2.mp3",
-"volume_base": 0.8,
+"sound_path": "res://assets/audio/Sam/Sam -v2 -shorter - not loud.mp3",
+"volume_base": 0.0,
 "volume_variance": 0.0
 }
 },
-"style": "FEMALEspy_on"
+"style": ""
 },
 "default_portrait": "",
 "description": "",
-"display_name": "Alex",
+"display_name": "Sam",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

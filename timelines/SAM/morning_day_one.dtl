@@ -1,0 +1,15 @@
+join sam_spy_on center
+join madoka center
+[wait time="3.0"]
+madoka: [mood=Woof Woof]*Woof woof* [ns = 1]
+sam_spy_on: [mood=default]*chuckles* "Ahh, Maddie, my partner in crime!" [ns = 2]
+madoka: [mood=Woof]*Woof* [ns = 1]
+sam_spy_on: [mood=default]"Yeah, I sometimes wonder why I'm still on this job." [ns = 2]
+sam_spy_on: [mood=default]"I kinda miss the days when it was all fun and games, when it was just a way for me to have my time." [ns = 2]
+sam_spy_on: [mood=default]"I just loved sharing my passion for anime, gaming and writing with anyone who'd tune in. It kinda got out of hand..." [ns=3]
+sam_spy_on: [mood=default]"But I don't regret it entirely. Every moment I'm streaming it feels as tho I'm connecting with everyone who's watching. It feels... Refreshing." [ns=3]
+sam_spy_on: [mood=default]"Of course, there are downsides too... Like dealing with online criticism. That never gets any easier." [ns=3]
+madoka: [mood=Woof]*questioning woof* [ns=1]
+sam_spy_on: [mood=default]"Not everyone will appreciate what I do or understand where I'm coming from." [ns=2]
+sam_spy_on: [mood=default]"But hey, it pays the bills and your food!"[ns=2]
+madoka: [mood=Woof Woof]*Woof woof* [ns = 1]

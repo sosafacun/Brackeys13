@@ -1,0 +1,17 @@
+join sam_spy_on center
+join Majesty center
+join phone center
+[wait time="3.0"]
+madoka: [mood=Woof Woof]*Woof woof woof woof woof* [ns = 1]
+sam_spy_on: [mood=default] "Down girl! It's just the phone!" [ns=2]
+sam_spy_on: [mood=default] "Hello?" [ns=2]
+phone: [mood=default] "Hi! I'm from the Central City Hospital, may I speak with Mr. Morgan?" [ns=2]
+sam_spy_on: [mood=default] "Yeah, I'm him." [ns=2]
+phone: [mood=default] "Good morning Mr. Morgan. We've got the results for your recent studies and thought it would be pertinent we told you right away so you can consult with your head doctor." [ns=3]
+sam_spy_on: [mood=default] "And? What did they say?" [ns=2]
+phone: [mood=default] "They are positive. Although the symptons have just began, you might have more of them and even more issues as time passes." [ns=2]
+[wait time="3.0"]
+phone: [mood=default] "Mr. Morgan? Are you there? Are you ok?" [ns=2]
+sam_spy_on: [mood=default] "Yes... Yes, I am. It's just... A lot to take in..." [ns=2]
+phone: [mood=default] "I know, but the symptons and the impact it has on your life can be lessen. Modern medicine has done a lot to-" [ns=2]
+sam_spy_on: [mood=default] "Thank you so much for your call. Have a nice week." [ns=2]

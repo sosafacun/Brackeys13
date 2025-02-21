@@ -4,7 +4,7 @@ class_name MainMenu
 signal fade_scene
 
 func _on_start_game_button_pressed() -> void:
-	fade_scene.emit("res://scenes/start_game_cutscene-1.tscn", self)
+	fade_scene.emit("res://scenes/cutscenes/start_game_cutscene-1.tscn", self)
 
 func _on_options_pressed() -> void:
 	fade_scene.emit("res://scenes/options.tscn", self)

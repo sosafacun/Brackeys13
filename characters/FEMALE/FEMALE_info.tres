@@ -6,8 +6,9 @@
 script = ExtResource("1_wkng4")
 entries = {
 "majesty": {
+"case_sensitive": true,
 "name": "majesty",
-"text": ""
+"text": "Alex's cat."
 }
 }
 enabled = true
